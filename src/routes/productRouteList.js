@@ -10,7 +10,7 @@ const productRouteList = [
   routes.post('/post', productController.create),
   routes.put('/products/update/:id', productController.update),
   routes.delete('/products/del/:id', productController.removerProduto),
-  routes.post('/pagination', Pagination),
+  routes.post('/pagination/:page', Pagination),
 ]
 
 export default productRouteList
